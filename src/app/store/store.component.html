@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="left">
+    <div class="store-container">
+      <div *ngIf="error" class="error-message">
+        {{ error }}
+      </div>
+      <div *ngIf="!error" class="store-content">
+        <h1>Tienda</h1>
+        <ul class="product-list">
+          <li *ngFor="let product of products" class="product-item">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <p class="product-price">Precio: {{ product.price | currency }}</p>
+            <button (click)="addToCart(product)">Agregar</button>
+            <button (click)="removeFromCart(product)">Eliminar</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <app-lista-carrito [carrito]="carrito"></app-lista-carrito>
+  </div>
+</div>

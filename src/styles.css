@@ -1,1 +1,93 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+header {
+  background-color: #1F1F3B;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .register {
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.auth-buttons .login {
+  background-color: #FF5733;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+main {
+  position: relative;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.highlight-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(31, 31, 59, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.highlight-text h2,
+.highlight-text h1,
+.highlight-text p {
+  margin: 10px 0;
+} 
+
+
+footer {
+  background-color: #1F1F3B;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+<div class="lista-carrito">
+  <h2>Carrito de Compras</h2>
+  <ul>
+    <li *ngFor="let item of carrito">
+      {{ item.name }} - Cantidad: {{ item.quantity }} - Precio total: {{ item.price * item.quantity | currency }}
+    </li>
+  </ul>
+  <p>Total: {{ calcularTotal() | currency }}</p>
+</div>
