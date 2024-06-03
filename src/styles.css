@@ -56,6 +56,90 @@ nav ul li a {
   color: white;
 }
 
+store {
+.error-message {
+    color: red;
+    background-color: #fdd;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+ .container {
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  padding: 0 10px; /* Espacio entre los dos elementos */
+}
+
+.right {
+  flex: 1;
+  padding: 0 10px; /* Espacio entre los dos elementos */
+}
+
+
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .product-item {
+    background-color: #FF5733;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: box-shadow 0.3s;
+  }
+
+  .product-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-price {
+    font-weight: bold;
+    color: #900C3F;
+  }
+}
+lista-carrito{
+.lista{
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #28a745;
+}
+
+}
+
 main {
   position: relative;
   text-align: center;
